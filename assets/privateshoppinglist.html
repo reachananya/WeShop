@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <title>WeShop</title>
+        <!-- links documentaion start -->
+        <!-- Bootstrap Scripts -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="./style.css" />
+
+        <!-- Google Fonts -->
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab:wght@500&family=Zilla+Slab:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font Awesome with Cloudflare -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+            crossorigin="anonymous"
+        />
+
+        <!-- Javascript and jQuery -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+        <!-- links documentaion end -->
+    </head>
+
+
+    <body class="privateshoppinglist">
+        <section id="title">
+            <div class="container-fluid top-title">
+                <!-- Nav Bar -->
+                <nav class="navbar navbar-expand-md navbar-dark">
+                    <a class="navbar-brand" href="/">
+						<img src="./imag/WeShop.png" alt="WeShop Logo"/>
+						<h1>WeShop</h1>
+					</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo01"
+                        aria-controls="navbarTogglerDemo01"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarTogglerDemo01"
+                    >
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/dashboard"
+                                    >Dashboard</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/sign-in">Sign In</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/sign-up"
+                                    >Sign Up</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                
+                <!-- Private Shopping List-->
+                
+                
+    <div class="second">
+        <div id="myDIV" class="header">
+            <h2 style="margin:5px">My Shopping List</h2>
+            <input type="text" id="myInput" placeholder="Title...">
+            <span onclick="newElement()" class="addBtn">Add</span>
+          </div>
+          
+          <ul id="myUL">
+            
+            <li>Buy eggs</li>
+            <li>Soap</li>
+            
+        </ul>
+
+
+
+    </div>
+
+        
+
+    
+    <script src="./privateshoppinglist.js"></script>
+    
+
+                
+                
+                <!--
+                <div id = "intro-list-card" class="shopping-card shopping-card-dark">
+                    <div class="shopping-card-header dot-grid">
+                        <h3 class="header-fifth" style="font-size: 22.5px;">
+                            "Soap"
+                            <div class="ml-3 status-row"></div>
+                        </h3>
+                        <div style="position: relative;"></div>
+                        <div class="progress"><div role="progressbar" class="progress-bar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">50%</div></div>
+
+                    </div>
+                    <div class="dropdown"><button class="dropdown-toggle option" type="button" id="taskCardOptions" data-toggle="dropdown"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h" class="svg-inline--fa fa-ellipsis-h fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="transform: translate(0px, -2px); width: 15px;"><path fill="currentColor" d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg></button><div class="dropdown-menu" aria-labelledby="taskCardOptions"><a class="dropdown-item">Hide completed</a><a class="dropdown-item">Clear all tasks</a></div></div>
+                </div>
+                <div class="task-card-body">
+                    <ul class="task-list scrollbar scrollbar-dark mb-0" id="task-list"><div><li class="task-item completed" data-id="0" draggable="false"><span class="handle" id="handle-0-6082cb75c65ec92a8e7da42d">⋮<span class="d-inline-block" style="text-decoration: none; transform: translateX(-2px);">⋮</span></span><input id="0" type="checkbox"><label for="0"></label><label class="" for="0"></label><input id="modify-task-0-6082cb75c65ec92a8e7da42d" class="input-dark-dark w-100 h-100" type="text" value="" style="margin-right: 5px;"><span id="task-0-6082cb75c65ec92a8e7da42d">hi</span><div class="ml-auto" style="display: flex; align-items: center;"><div class="task-item-options"><div id="non-modify-0-6082cb75c65ec92a8e7da42d-1" class="dropdown"><button class="dropdown-toggle option" type="button" id="dropdownMenuButton" data-toggle="dropdown"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h" class="svg-inline--fa fa-ellipsis-h fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="transform: translate(0px, -2px); width: 15px;"><path fill="currentColor" d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg></button><div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" draggable="false">Edit</a><a class="dropdown-item" draggable="false">Delete</a></div></div><button id="modify-0-6082cb75c65ec92a8e7da42d" class="option check" type="button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="svg-inline--fa fa-check fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="transform: translate(0.2px, -1.5px); width: 15px;"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg></button></div></div></li><li class="task-item " data-id="1" draggable="false"><span class="handle" id="handle-1-6082cb75c65ec92a8e7da42d">⋮<span class="d-inline-block" style="text-decoration: none; transform: translateX(-2px);">⋮</span></span><input id="1" type="checkbox"><label for="1"></label><label class="" for="1"></label><input id="modify-task-1-6082cb75c65ec92a8e7da42d" class="input-dark-dark w-100 h-100" type="text" value="" style="margin-right: 5px;"><span id="task-1-6082cb75c65ec92a8e7da42d">yo</span><div class="ml-auto" style="display: flex; align-items: center;"><div class="task-item-options"><div id="non-modify-1-6082cb75c65ec92a8e7da42d-1" class="dropdown"><button class="dropdown-toggle option" type="button" id="dropdownMenuButton" data-toggle="dropdown"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="ellipsis-h" class="svg-inline--fa fa-ellipsis-h fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="transform: translate(0px, -2px); width: 15px;"><path fill="currentColor" d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"></path></svg></button><div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item">Set current</a><a class="dropdown-item" draggable="false">Edit</a><a class="dropdown-item" draggable="false">Delete</a></div></div><button id="modify-1-6082cb75c65ec92a8e7da42d" class="option check" type="button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="svg-inline--fa fa-check fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="transform: translate(0.2px, -1.5px); width: 15px;"><path fill="currentColor" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg></button></div></div></li></div></ul><div class="task-input mt-3"><div class="task-input-grid"><input class="input-dark-dark h-100 w-100" type="text" placeholder="Add Task" value=""><button class="button-dark" type="button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" class="svg-inline--fa fa-plus fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="transform: translate(0.2px, -1.5px);"><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></button></div></div></div>-->
+
+                    
