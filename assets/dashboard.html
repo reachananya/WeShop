@@ -20,7 +20,8 @@
         ></script>
 
         <!-- Stylesheet -->
-        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="./homepage.styles.css" />
+        <link rel="stylesheet" href="./dashboard.styles.css" />
 
         <!-- Google Fonts -->
 
@@ -58,15 +59,14 @@
     </head>
 
     <body class="dashboard">
-
         <header>
-            <div class="container-fluid top-title">
+            <div class="container-fluid top-title box">
                 <!-- Nav Bar -->
                 <nav class="navbar navbar-expand-md navbar-dark">
-                    <a class="navbar-brand" href="/">
-						<img src="./imag/WeShop.png" alt="WeShop Logo"/>
-						<h1>WeShop</h1>
-					</a>
+                    <a class="navbar-brand" href="/assets/homepage.html">
+                        <img src="./imag/WeShop.png" alt="WeShop Logo" />
+                        <h1>WeShop</h1>
+                    </a>
                     <button
                         class="navbar-toggler"
                         type="button"
@@ -87,16 +87,63 @@
                                 <a class="nav-link" href="/about">About Us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/contact-us">Contact Us</a>
+                                <a class="nav-link" href="/contact-us"
+                                    >Contact Us</a
+                                >
                             </li>
                             <li>
-                                <a class="nav-link" href="/profile"><i class="fas fa-user-circle"></i></a>
+                                <a class="nav-link" href="/profile"
+                                    ><i class="fas fa-user-circle fa-3x"></i
+                                ></a>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </div>
         </header>
-        
+
+        <div class="body-container">
+            <div class="public-chat box">
+                <div class="chat-title">
+                    <h2>Global Chat</h2>
+                </div>
+                <div class="content">
+                    <p><strong>Me: </strong>Hello Guys! What's Up</p>
+                    <p><strong>Ananya: </strong> Hey! It is nice in here!</p>
+                </div>
+                <div class="chat-box">
+                    <form action="/send-message" method="post">
+                        <input
+                            type="text"
+                            name="chat-content"
+                            id="chat-content"
+                        />
+                    </form>
+                </div>
+            </div>
+            <div class="right">
+                <div class="shop-name box shop-details">
+                    <h2>Shop Name dynamically comes here</h2>
+                </div>
+                <div class="shop-link box shop-details">
+                    <h2>Shop Link Comes here</h2>
+                </div>
+                <div class="shop-list">
+                    <div class="shop-list1 box shop">
+                        <div class="shop-title">
+                            <h2>Shop 1</h2>
+                        </div>
+                        <div class="shop-content"></div>
+                    </div>
+
+                    <div class="shop-list2 box shop">
+                        <div class="shop-title">
+                            <h2>Shop 2</h2>
+                        </div>
+                        <div class="shop-content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
