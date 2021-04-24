@@ -195,7 +195,6 @@ h6 {
 /* .flex-column1{
     width: 75%;
 }
-
 .flex-column2{
     width: 25%;
 } */
@@ -435,5 +434,10 @@ input {
 .addBtn:hover {
   background-color: #bbb;
 }
+                                                                                    /* Private Chatting */
 
+.privatechatting{
+    background-color: #ea907a;
+    font-size: 30px;
 
+}
