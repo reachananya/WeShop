@@ -167,6 +167,7 @@ h6 {
     justify-content: space-between;
     align-items: center;
 }
+
 .navbar-brand {
     width: 40%;
     font-size: 2.5rem;
@@ -197,10 +198,13 @@ h6 {
     font-size: 1.2rem;
     font-weight: light;
     color: rgb(71, 52, 0) !important;
-}
+    border-radius: 5px;
+    background: none !important;
+}o
 
 .nav-link:hover {
     color: rgb(126, 92, 0) !important;
+    background: none !important;
 }
 
 /* Title Image */
@@ -303,6 +307,21 @@ h6 {
 #footer img {
     width: 5%;
 }
+
+/* Dashboard Styling */
+
+.dashboard{
+    background-color:#ea907a;
+    margin: 0;
+}
+
+.dashboard .container-fluid{
+    padding: 0
+}
+
+
+
+
 
                                                                /* PRIVATE SHOPPING LIST */
 
